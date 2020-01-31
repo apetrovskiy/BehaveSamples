@@ -10,15 +10,14 @@ def step_impl(context):
 def step_impl(context, number):  # -- NOTE: number is converted into integer
     assert number > 1 or number == 0
     context.my_data = "my string data"
-    print(number)
     context.tests_count = number
 
 
 @then('behave will test them for us!')
 def step_impl(context):
-    print("context output")
+    print("context output start")
     print(context.tests_count)
     print(context.my_data)
-    print("end")
+    print("context output end")
     assert context.failed is False
     assert context.tests_count >= 0
