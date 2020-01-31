@@ -31,3 +31,4 @@ jobs:
         python -m unittest discover
         behave --junit
         ls -la
+        ls -la reports
