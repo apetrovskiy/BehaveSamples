@@ -30,5 +30,4 @@ jobs:
         #pytest
         python -m unittest discover
         behave --junit
-        ls -la
-        ls -la reports
+        cat reports/TESTS-example.xml
